@@ -15,10 +15,8 @@ sns.set_style('whitegrid')
 import warnings
 warnings.filterwarnings('ignore')
 
-from google.colab import drive
-drive.mount('/content/drive')
 
-file_path = '/content/drive/MyDrive/Colab Notebooks/full-attendee-dataset.csv'
+file_path = 'full-attendee-dataset.csv'
 df = pd.read_csv(file_path)
 
 df.head()
